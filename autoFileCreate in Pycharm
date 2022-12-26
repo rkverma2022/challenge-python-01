@@ -1,0 +1,13 @@
+import keyboard
+import pyautogui
+from keyboard import press
+#clicking and dragging
+file_name = (input("Enter File: " ) + ".py")
+pyautogui.click(100,150)
+pyautogui.rightClick()
+pyautogui.leftClick(pyautogui.moveRel(300,0,duration=0.5))
+pyautogui.leftClick(pyautogui.moveRel(100,0,duration=1))
+
+pyautogui.write(file_name)
+
+keyboard.press('enter')
